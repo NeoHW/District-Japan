@@ -1,0 +1,11 @@
+html,body {
+    height:100%;
+    width:100%;
+    margin:0px;
+    border: 0;
+}
+
+.splash {
+    width: 100%;
+    z-index: 0;
+}
