@@ -10,7 +10,7 @@ body {
 }
 */
 
-.body {
+.main {
     color:white;
     display:flex;
     flex-direction: column;
