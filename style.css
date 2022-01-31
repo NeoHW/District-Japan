@@ -14,7 +14,34 @@ body {
     color:white;
     display:flex;
     flex-direction: column;
+    padding: 0px 300px;
+    font-family: roboto, arial, sans-serif;
+
 }
+
+.header{
+    display:flex;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    /* dealing with default ul margins & paddings */
+    margin:10px;
+    padding:0px;
+    gap:30px;
+    align-items: center;
+}
+
+.hero-text{
+    color:#F9fAF8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+
 
 .card {
     border: 3px solid #00f;
@@ -23,4 +50,8 @@ body {
     padding: 16px;
     height : 100px;
     width: 100px;
+  }
+
+  .button{
+      background-color: #3882F6;
   }
