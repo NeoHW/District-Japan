@@ -18,7 +18,7 @@ body {
     font-family: 'roboto', arial, sans-serif;
 }
 
-.header{
+.header {
     display:flex;
     justify-content: space-between;
     margin: -8px -308px;
@@ -33,7 +33,7 @@ body {
 }
 
 
-ul{
+ul {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -43,43 +43,69 @@ ul{
     gap:30px;
 }
 
-.content{
+.content {
     display:flex;
-    justify-content: space-between;
     margin: 150px 0px;
-    gap: 50px;
+    gap: 100px;
     background-color: rgba(100,100,100,0.6);
-    border:1px solid red;
+    border:1px solid yellow;
 }
 
-.content-text{
+.content-text {
     display:flex;
     flex-direction: column;
-    width: 500px;
-    height: 300px;
+    width: 400px;
     border:1px solid red;
+    flex-grow: 1;
 }
 
-.content-image{
+.content-image {
     border:1px solid red;
     width: 650px;
     height: 300px;
+    margin: 30px;
 }
 
-.content div{
+.content div {
     flex-grow: 1;
     border:1px solid red;
-    font-size: 18px;
+    font-size: 25px;
     color: #E5E7EB
 }
 
-.content .neon-text{
+/* Next 3 selectors to create purple neon text */
+.content .neon-pink {
     position:relative;
-    color:#F9fAF8;
+    color:#fff;
     font-size: 48px;
-    font-weight: 800;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px #f000ff;
     flex-grow: 2;
 }
+
+.content .neon-pink::after {
+    content: "Welcome to District: Japan";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f000ff;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.content .neon-pink::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background: #f000ff;
+    opacity: .5;
+    filter: blur(40px);
+    z-index: -2;
+}
+
 
 
 .card {
@@ -91,8 +117,8 @@ ul{
     width: 100px;
   }
 
-  button{
-      background-color: #050298;
+  button {
+      background-color: #E40078;
       border-radius: 10px;
       width: 120px;
       height: 35px;
