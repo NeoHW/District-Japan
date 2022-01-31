@@ -15,15 +15,23 @@ body {
     display:flex;
     flex-direction: column;
     padding: 0px 300px;
-    font-family: roboto, arial, sans-serif;
+    font-family: 'roboto', arial, sans-serif;
 }
 
 .header{
     display:flex;
     justify-content: space-between;
     margin: -8px -308px;
-    background-color: rgba(83,84,134,0.5);
+    background-color: rgba(83,84,134,0.6);
 }
+
+.logo{
+    height: 100px;
+    display:flex;
+    padding-left: 230px;
+
+}
+
 
 ul{
     list-style-type: none;
@@ -31,21 +39,23 @@ ul{
     align-items: center;
     /* dealing with default ul margins & paddings */
     margin:10px;
-    padding:0px;
+    padding-right:200px;
     gap:30px;
 }
 
 .content{
     display:flex;
+    justify-content: space-between;
     margin: 150px 0px;
     gap: 50px;
+    background-color: rgba(100,100,100,0.6);
     border:1px solid red;
 }
 
 .content-text{
     display:flex;
-    flex-flow: column wrap;
-    width: 650px;
+    flex-direction: column;
+    width: 500px;
     height: 300px;
     border:1px solid red;
 }
@@ -56,11 +66,19 @@ ul{
     height: 300px;
 }
 
+.content div{
+    flex-grow: 1;
+    border:1px solid red;
+    font-size: 18px;
+    color: #E5E7EB
+}
 
-.hero-text{
+.content .neon-text{
+    position:relative;
     color:#F9fAF8;
     font-size: 48px;
     font-weight: 800;
+    flex-grow: 2;
 }
 
 
@@ -73,6 +91,12 @@ ul{
     width: 100px;
   }
 
-  .button{
-      background-color: #3882F6;
+  button{
+      background-color: #050298;
+      border-radius: 10px;
+      width: 120px;
+      height: 35px;
+      font-size: 18px;
+      color: #E5E7EB;
+      font-weight:bold;
   }
