@@ -16,13 +16,13 @@ body {
     flex-direction: column;
     padding: 0px 300px;
     font-family: roboto, arial, sans-serif;
-
 }
 
 .header{
     display:flex;
-    border: 1px solid red;
     justify-content: space-between;
+    margin: -8px -308px;
+    background-color: rgba(83,84,134,0.5);
 }
 
 ul{
@@ -43,6 +43,10 @@ ul{
 }
 
 .content-text{
+    display:flex;
+    flex-flow: column wrap;
+    width: 650px;
+    height: 300px;
     border:1px solid red;
 }
 
