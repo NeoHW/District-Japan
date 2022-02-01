@@ -224,6 +224,15 @@ img {
     color: white;
 }
 
+.quote {
+    background: url("static/scenery.jpg")no-repeat center center scroll; 
+    background-size: 100% auto;
+    height: 500px;
+    margin: 0px -308px;
+    display: flex;
+}
+
+
 
   button {
       background-color: #E40078;
