@@ -44,7 +44,7 @@ ul {
 }
 
 .content {
-    margin: 20px 0px;
+    margin: 100px 0px;
     /* Creating red neon border */
     border: 0.2rem solid #FFF;
     border-radius: 2rem;
@@ -89,36 +89,47 @@ img {
     justify-content: center;
     align-items: center;
 }
+.neon-pink {
+    text-shadow: 0 0 20px #f000ff;
+}
+
+.neon-pink::after {
+    color: #f000ff;
+}
+
+.neon-pink::before {
+    background: #f000ff;
+}
 
 /* Next 3 selectors to create purple neon text */
-.content-container .neon-pink {
+.content-container .neon-pink,
+.shorts-section div {
     position:relative;
     left: 70px;
     color:#fff;
     font-size: 48px;
     letter-spacing: 4px;
-    text-shadow: 0 0 20px #f000ff;
     flex-grow: 2;
 }
 
-.content-container .neon-pink::after {
+.content-container .neon-pink::after,
+.shorts-section div::after{
     content: "Welcome to District: Japan";
     position: absolute;
     top: 0;
     left: 0;
-    color: #f000ff;
     filter: blur(15px);
     z-index: -1;
 }
 
-.content-container .neon-pink::before {
+.content-container .neon-pink::before,
+.shorts-section div::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height:100%;
     width:100%;
-    background: #f000ff;
     opacity: .5;
     filter: blur(40px);
     z-index: -2;
@@ -155,15 +166,64 @@ img {
     }
 }
 
+.shorts {
+    background-color: #1F2937;
+    margin: 0px -308px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0px;
+}
+
+.shorts-header {
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neon-orange {
+    text-shadow: 0 0 20px #FF7600;
+}
+
+.neon-orange::after {
+    color: #FF7600;
+}
+
+.neon-orange::before {
+    background: #FF7600;
+}
+
+.shorts-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
 .card {
     border: 3px solid #00f;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-    border-radius: 20px;
-    padding: 16px;
-    height : 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
+
+.card img,
+.card {
+    border-radius:20px;
+}
+
+.shorts-section div {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
 
   button {
       background-color: #E40078;
