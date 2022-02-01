@@ -263,12 +263,48 @@ img {
     margin-right: -100px;
 }
 
+.action {
+    background-color: #1F2937;
+    margin: 0px -308px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0px;
+}
+
+.action-container {
+    background-color: #A33D02;
+    padding: 20px 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.action-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer{
+    background-color: #301934;
+    margin: 0px -308px -6px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+
   button {
-      background-color: #E40078;
+      background-color: #008081;
       border-radius: 10px;
-      width: 120px;
-      height: 35px;
+      width: 100px;
+      height: 33px;
       font-size: 18px;
       color: #E5E7EB;
       font-weight:bold;
+      border:white 2px solid;
   }
