@@ -44,6 +44,12 @@ ul {
 }
 
 .content {
+    border: solid 1px red;
+    margin: 20px 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content-container {
     display:flex;
     margin: 150px 0px;
     gap: 100px;
@@ -71,7 +77,7 @@ img {
     height:100%;
 }
 
-.content div {
+.content-container div {
     display:flex;
     flex-grow: 1;
     border:1px solid red;
@@ -81,7 +87,7 @@ img {
 }
 
 /* Next 3 selectors to create purple neon text */
-.content .neon-pink {
+.content-container .neon-pink {
     position:relative;
     color:#fff;
     font-size: 48px;
@@ -90,7 +96,7 @@ img {
     flex-grow: 2;
 }
 
-.content .neon-pink::after {
+.content-container .neon-pink::after {
     content: "Welcome to District: Japan";
     position: absolute;
     top: 0;
@@ -100,7 +106,7 @@ img {
     z-index: -1;
 }
 
-.content .neon-pink::before {
+.content-container .neon-pink::before {
     content: "";
     position: absolute;
     top: 0;
