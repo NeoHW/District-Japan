@@ -230,9 +230,38 @@ img {
     height: 500px;
     margin: 0px -308px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style:italic;
+    /* Add light glow around text */
+    text-shadow: 0 0 5px #f9faf8,
+    0 0 15px #f9faf8,
+    0 0 30px #f9faf8;
+}
+
+.quote-container div {
+    mix-blend-mode:luminosity;
+}
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 10%;
 }
 
 
+.quote-name {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: -100px;
+}
 
   button {
       background-color: #E40078;
