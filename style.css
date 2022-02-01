@@ -45,6 +45,15 @@ ul {
 
 .content {
     margin: 20px 0px;
+    /* Creating red neon border */
+    border: 0.2rem solid #FFF;
+    border-radius: 2rem;
+    box-shadow: 0 0 .2rem #FFF,
+                0 0 .2rem #FFF,
+                0 0 2rem #F00,
+                0 0 0.8rem #F00,
+                0 0 2.8rem #F00,
+                inset 0 0 1.3rem #F00;
     background-color: rgba(0,0,0,0.5);
 }
 
