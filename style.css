@@ -313,3 +313,8 @@ img {
       font-weight:bold;
       border:white 2px solid;
   }
+
+  button:hover {
+      background-color: white;
+      color: #008081;
+  }
