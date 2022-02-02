@@ -72,12 +72,12 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 3;
+    flex: 1;
     gap: 30px;
 }
 
 .content-image {
-    flex: auto;
+    flex: 2;
     padding: 2px;
 }
 
