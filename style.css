@@ -17,6 +17,12 @@ body {
     background-color: rgba(83,84,134,0.6);
 }
 
+.header-links a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
 .logo{
     height: 100px;
     display:flex;
@@ -72,6 +78,7 @@ ul {
 
 .content-image {
     flex: auto;
+    padding: 2px;
 }
 
 img {
