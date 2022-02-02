@@ -3,25 +3,17 @@ body {
     background-size: cover;
 }
 
-/*
-.splash {
-    width: 100%;
-    z-index: 0;
-}
-*/
-
 .main {
     color:white;
     display:flex;
     flex-direction: column;
-    padding: 0px 300px;
     font-family: 'roboto', arial, sans-serif;
 }
 
 .header {
     display:flex;
     justify-content: space-between;
-    margin: -8px -308px;
+    margin: -8px -8px;
     background-color: rgba(83,84,134,0.6);
 }
 
@@ -44,7 +36,19 @@ ul {
 }
 
 .content {
-    margin: 100px 0px;
+    margin: 100px -8px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display:flex;
+    justify-content: space-between;
+    margin: 150px 0px;
+    gap: 40px;
+    background-color: rgba(100,100,100,0.6);
     /* Creating red neon border */
     border: 0.2rem solid #FFF;
     border-radius: 2rem;
@@ -57,24 +61,17 @@ ul {
     background-color: rgba(0,0,0,0.5);
 }
 
-.content-container {
-    display:flex;
-    margin: 150px 0px;
-    gap: 40px;
-    background-color: rgba(100,100,100,0.6);
-}
-
 .content-text {
     display:flex;
     flex-direction: column;
-    width: 400px;
-    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    gap: 30px;
 }
 
 .content-image {
-    display: flex;
-    width: 650px;
-    height: 300px;
+    flex: auto;
 }
 
 img {
@@ -82,14 +79,10 @@ img {
     height:100%;
 }
 
-.content-container div {
-    display:flex;
-    flex-grow: 1;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-}
 .neon-pink {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
     text-shadow: 0 0 20px #f000ff;
 }
 
@@ -102,17 +95,15 @@ img {
 }
 
 /* Next 3 selectors to create purple neon text */
-.content-container .neon-pink,
+.neon-pink,
 .shorts-section div {
     position:relative;
-    left: 70px;
     color:#fff;
     font-size: 48px;
     letter-spacing: 4px;
-    flex-grow: 2;
 }
 
-.content-container .neon-pink::after,
+.neon-pink::after,
 .shorts-section div::after{
     content: "Welcome to District: Japan";
     position: absolute;
@@ -121,8 +112,7 @@ img {
     filter: blur(15px);
     z-index: -1;
 }
-
-.content-container .neon-pink::before,
+.neon-pink::before,
 .shorts-section div::before {
     content: "";
     position: absolute;
@@ -137,7 +127,12 @@ img {
 
 /*Creating Neon Green flicker effect*/
 .neon-green{
-    padding-left: 60px;
+    display:flex;
+    flex-flow: wrap;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
     animation: flicker 1.5s infinite alternate;
     color: #fff;
     text-shadow:
@@ -168,7 +163,7 @@ img {
 
 .shorts {
     background-color: #1F2937;
-    margin: 0px -308px;
+    margin: 0px -8px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -208,8 +203,9 @@ img {
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     height: 150px;
     width: 150px;
-  }
+}
 
+.content img,
 .card img,
 .card {
     border-radius:20px;
@@ -228,7 +224,7 @@ img {
     background: url("static/scenery.jpg")no-repeat center center scroll; 
     background-size: 100% auto;
     height: 500px;
-    margin: 0px -308px;
+    margin: 0px -8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +261,7 @@ img {
 
 .action {
     background-color: #1F2937;
-    margin: 0px -308px;
+    margin: 0px -8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,7 +287,7 @@ img {
 
 .footer{
     background-color: #301934;
-    margin: 0px -308px -6px;
+    margin: 0px -8px -6px;
     display: flex;
     justify-content: center;
     padding: 20px 0px;
